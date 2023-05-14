@@ -44,7 +44,7 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+  // document.getElementById('mainNav').classList.add('active');
   return (
     <div>
       <div id="background" className="moving-background"></div>

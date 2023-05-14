@@ -96,7 +96,8 @@ body {
   .section {
     background: rgba(28, 35, 49, .88);
     color: #fff;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 400px;
     border-radius: 5px;
     padding: 20px;
     opacity: 0;
@@ -194,7 +195,7 @@ body {
   @media (max-width: 767px) {
     .left-column {
       position: static;
-      width: 1000%;
+      width: 100%;
       height: auto;
       padding-top: 0;
       margin-bottom: 30px;
