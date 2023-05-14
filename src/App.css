@@ -83,6 +83,7 @@ body {
 
   .section {
     background: rgba(28, 35, 49, .88);
+    color: #fff;
     margin-bottom: 50px;
     border-radius: 5px;
     padding: 20px;
@@ -119,6 +120,7 @@ body {
 
   .left-column.active ul.navbar-nav li,
   .left-column.active ul.navbar-nav li a {
+    color: #fff;
     transform: translateX(0);
     opacity: 1;
   }
@@ -139,19 +141,23 @@ body {
     text-align: center;
     flex-shrink: 0;
   }
-
+  
   .footer-text {
     margin-bottom: 10px;
   }
-
+  
   .footer-text a {
     color: #fff;
     font-size: 24px;
     margin: 0 10px;
   }
-
+  
   .footer-text a:hover {
     color: #ccc;
+  }
+  
+  .footer-text .custom-link {
+    margin: 0 0px;
   }
 
   .moving-background {
@@ -164,10 +170,19 @@ body {
     background-image: url('https://i.imgur.com/izUkR2P.png');
   }
 
+  .content {
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .content a {
+    font-size: inherit;
+  }
+
   @media (max-width: 767px) {
     .left-column {
       position: static;
-      width: 100%;
+      width: 1000%;
       height: auto;
       padding-top: 0;
       margin-bottom: 30px;

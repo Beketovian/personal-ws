@@ -81,7 +81,7 @@ function App() {
               <section id="about" className="section py-5 active">
                 <h2 className="section-heading">About Me</h2>
                 <p className="section-subheading">
-                  This is a description about me. More details to come!
+                  desc abt me. this WIP website rn
                 </p>
                 <img src="your-image.jpg" alt="About me" className="img-fluid rounded-circle" />
               </section>
@@ -121,25 +121,29 @@ function App() {
               <section id="contact" className="section py-5">
                 <h2 className="section-heading">Contact Me</h2>
                 <p className="section-subheading">If you have any questions, feel free to contact me:</p>
-                <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+                <p>Email: <a href="mailto:andrewbeketov03@gmail.com">andrewbeketov03@gmail.com</a></p>
               </section>
             </div>
           </div>
         </div>
       </main>
       <footer>
-        <div className="container">
-          <div className="footer-text">
-            <a href="https://github.com/Beketovian" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
+  <div class="container">
+    <div class="footer-text">
+      <a href="https://github.com/Beketovian" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/andrew-beketov-94b576217/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <p class="content">
+        Designed using <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="custom-link">Figma</a>,
+        built with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" class="custom-link">React.js</a>
+      </p>
     </div>
+  </div>
+</footer>
+  </div>
   );
 }
 
