@@ -81,10 +81,12 @@ body {
   
   .nav-link.active {
     padding-left: 20px;
+    transition: padding-left 0.3s ease-in-out;
   }
   
   .nav-link.active::before {
     transform: scaleX(2); 
+    transition: transform 0.3s ease-in-out;
   }
   
   .nav-item {
@@ -125,7 +127,7 @@ body {
   .left-column ul.navbar-nav li {
     transform: translateX(-100%);
     opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 
   .left-column.active ul.navbar-nav li,
