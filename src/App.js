@@ -5,41 +5,38 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const navLinks = document.querySelectorAll('#mainNav ul li a');
+      const navLinks = document.querySelectorAll('.nav-link');
       const sections = document.querySelectorAll('.section');
-      const projectsSection = document.getElementById('projects');
-      const contactSection = document.getElementById('contact');
-
+      const scaleFactor = 2; //scale factor for how fast/slow it moves
+  
       document.querySelector('.moving-background').style.top = -(scrollTop * 0.2) + 'px';
-
+  
       sections.forEach((section) => {
         const offset = section.offsetTop - 290;
         const height = section.offsetHeight;
         const sectionId = section.id;
-
+  
         if (scrollTop >= offset && scrollTop < offset + height) {
           navLinks.forEach((link) => link.classList.remove('active'));
           document.getElementById(`${sectionId}-link`).classList.add('active');
           sections.forEach((section) => section.classList.remove('active'));
           section.classList.add('active');
-
-          if (sectionId === 'projects') {
-            projectsSection.classList.add('active');
-            contactSection.classList.remove('active');
-          } else if (sectionId === 'contact') {
-            projectsSection.classList.remove('active');
-            contactSection.classList.add('active');
-          } else {
-            projectsSection.classList.remove('active');
-            contactSection.classList.remove('active');
-          }
         }
       });
+  
+      navLinks.forEach(navLink => {
+        const activeNavItem = navLink.parentNode;
+        const widthDifference = navLink.offsetWidth - activeNavItem.offsetWidth;
+  
+        activeNavItem.style.paddingLeft = widthDifference + 'px';
+  
+        const textContainer = document.querySelector('.footer-text');
+        textContainer.style.marginLeft = `${(widthDifference * scaleFactor)}px`;
+      });
     };
-
+  
     window.addEventListener('scroll', handleScroll);
-    document.getElementById('mainNav').classList.add('active');
-
+  
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

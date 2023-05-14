@@ -65,20 +65,30 @@ body {
     position: relative;
     transition: padding-left 0.3s ease-in-out;
   }
-
+  
   .nav-link::before {
-    content: "-";
+    content: "";
     position: absolute;
+    top: 50%;
     left: -20px;
-    transition: all 0.3s;
+    width: calc(1% + 12px);
+    height: 2px;
+    background-color: white;
+    transition: transform 0.3s;
+    transform-origin: left center;
+    transform: scaleX(1);
   }
-
+  
   .nav-link.active {
     padding-left: 20px;
   }
-
+  
   .nav-link.active::before {
-    transform: scaleX(2);
+    transform: scaleX(2); 
+  }
+  
+  .nav-item {
+    margin-left: 30px;
   }
 
   .section {
