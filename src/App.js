@@ -138,7 +138,8 @@ function App() {
       </a>
       <p class="content">
         Designed using <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="custom-link">Figma</a>,
-        built with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" class="custom-link">React.js</a>
+        built with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" class="custom-link">React.js </a>
+        & <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="custom-link">Tailwind CSS</a>
       </p>
     </div>
   </div>
