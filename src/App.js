@@ -33,6 +33,8 @@ function App() {
             projectsSection.classList.remove('active');
             contactSection.classList.remove('active');
           }
+        } else {
+          document.getElementById(`${sectionId}-link`).classList.remove('active');
         }
       });
     };
@@ -42,6 +44,31 @@ function App() {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    let rafId;
+    const handleWordAnimation = () => {
+      rafId = requestAnimationFrame(handleWordAnimation);
+
+      const navLinks = document.querySelectorAll('#mainNav ul li a');
+
+      navLinks.forEach((link) => {
+        if (link.classList.contains('active')) {
+          link.style.transition = 'padding-left 0.3s ease-in-out';
+          link.style.paddingLeft = '20px';
+        } else {
+          link.style.transition = 'padding-left 0.3s ease-in-out';
+          link.style.paddingLeft = '0';
+        }
+      });
+    };
+
+    handleWordAnimation();
+
+    return () => {
+      cancelAnimationFrame(rafId);
     };
   }, []);
   // document.getElementById('mainNav').classList.add('active');
