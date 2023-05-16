@@ -75,7 +75,7 @@ footer {
   @apply text-white text-2xl mx-2.5 my-0 hover:text-[#ccc];
 }
 .footer-text .custom-link {
-  @apply m-0;
+  @apply m-0 text-sm no-underline;
 }
 .moving-background {
   @apply fixed w-full h-[calc(100%_-_50px)] z-[-1] bg-[url('https://i.imgur.com/izUkR2P.png')] left-0 top-[50px];

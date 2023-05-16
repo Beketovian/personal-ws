@@ -154,23 +154,23 @@ function App() {
           </div>
         </div>
       </main>
-      <footer>
-  <div class="container">
-    <div class="footer-text">
-      <a href="https://github.com/Beketovian" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/andrew-beketov-94b576217/" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <p class="content">
-        Designed using <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="custom-link">Figma</a>,
-        built with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" class="custom-link">React.js </a>
-        & <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="custom-link">Tailwind CSS</a>
-      </p>
-    </div>
-  </div>
-</footer>
+    <footer>
+      <div class="container">
+        <div class="footer-text">
+          <a href="https://github.com/Beketovian" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/andrew-beketov-94b576217/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <p class="content">
+            Designed using <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="custom-link">Figma</a>,
+            built with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" class="custom-link">React.js </a>
+            & <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="custom-link">Tailwind CSS</a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
   );
 }
