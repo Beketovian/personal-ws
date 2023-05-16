@@ -21,7 +21,7 @@ h6 {
   @apply bg-[#1c2331] text-[0.85rem] font-bold transition-[padding] duration-[0.3s] fixed w-[250px] h-screen z-[1000] translate-x-[-250px] transition-transform duration-[0.3s] ease-[ease-in-out] px-0 py-2.5 border-[none] left-0 top-0;
 }
 #mainNav.active {
-  @apply translate-x-0;
+  @apply translate-x-0 text-xl;
 }
 .navbar-dark .navbar-brand {
   @apply text-white;
@@ -30,7 +30,7 @@ h6 {
   @apply text-[#d3d3d3] hover:text-white;
 }
 .nav-link {
-  @apply relative transition-[padding-left] duration-[0.3s] ease-[ease-in-out] before:content-[""] before:absolute before:w-[calc(1%_+_12px)] before:h-0.5 before:bg-[white] before:transition-transform before:duration-[0.3s] before:origin-[left_center] before:scale-x-100 before:-left-5 before:top-2/4;
+  @apply relative transition-[padding-left] duration-[0.3s] ease-[ease-in-out] before:content-[""] before:absolute before:w-[calc(1%_+_12px)] before:h-0.5 before:bg-[white] before:transition-transform before:duration-[0.3s] before:origin-[left_center] before:scale-x-100 before:-left-5 before:top-2/4 top-[30vh];
 }
 .nav-link.active {
   @apply transition-[padding-left] duration-[0.3s] ease-[ease-in-out] pl-5 before:transition-transform before:duration-[0.3s] before:ease-[ease-in-out] before:scale-x-[2];
