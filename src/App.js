@@ -1,7 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles.css';
+import CustomTypewriter from './components/CustomTypewriter.js';
+// import Typewriter from 'typewriter-effect'
 
 function App() {
+  // const [showTypewriter, setShowTypewriter] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -79,7 +82,12 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 left-column" id="mainNav">
-              <nav>
+              <div className="typewriter container">
+                <h1 className="text-3xl text-white px-3 rounded-lg my-2 h-12">
+                  <CustomTypewriter text="Hi, I'm Andrew Beketov " typingDelay={100} staticDelay={500} />
+                </h1>
+            </div>
+              <nav>      
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <a id="about-link" className="nav-link active" href="#about">

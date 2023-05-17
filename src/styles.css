@@ -1,8 +1,9 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
 body {
-  @apply bg-gray-800 text-white text-base leading-[26px] tracking-[1px] overflow-x-hidden flex flex-col min-h-screen pt-[50px];
+  @apply bg-gray-800 text-[#c9cfdc] leading-[26px] tracking-[1px] overflow-x-hidden flex flex-col min-h-screen pt-[50px];
   font-family: "Poppins", sans-serif;
   word-spacing: 2px;
 }
@@ -18,28 +19,28 @@ h6 {
   @apply text-white;
 }
 #mainNav {
-  @apply bg-[#1c2331] text-[0.85rem] font-bold transition-[padding] duration-[0.3s] fixed w-[250px] h-screen z-[1000] translate-x-[-250px] transition-transform duration-[0.3s] ease-[ease-in-out] px-0 py-2.5 border-[none] left-0 top-0;
+  @apply bg-[#1c2331] font-bold transition-[padding] duration-[0.3s] fixed w-[250px] h-screen z-[1000] translate-x-[-250px] transition-transform duration-[0.3s] ease-[ease-in-out] px-0 py-2.5 border-[none] left-0 top-0 text-2xl;
 }
 #mainNav.active {
-  @apply translate-x-0 text-xl;
+  @apply translate-x-0;
 }
 .navbar-dark .navbar-brand {
-  @apply text-white;
+  @apply text-[#c9cfdc];
 }
 .navbar-dark .navbar-nav .nav-link {
-  @apply text-[#d3d3d3] hover:text-white;
+  @apply text-[#d3d3d3] hover:text-[#c9cfdc];
 }
 .nav-link {
   @apply relative transition-[padding-left] duration-[0.3s] ease-[ease-in-out] before:content-[""] before:absolute before:w-[calc(1%_+_12px)] before:h-0.5 before:bg-[white] before:transition-transform before:duration-[0.3s] before:origin-[left_center] before:scale-x-100 before:-left-5 before:top-2/4 top-[30vh];
 }
 .nav-link.active {
-  @apply transition-[padding-left] duration-[0.3s] ease-[ease-in-out] pl-5 before:transition-transform before:duration-[0.3s] before:ease-[ease-in-out] before:scale-x-[2];
+  @apply transition-[padding-left] duration-[0.3s] ease-[ease-in-out] before:transition-transform before:duration-[0.3s] before:ease-[ease-in-out] before:scale-x-[2];
 }
 .nav-item {
   @apply ml-[30px];
 }
 .section {
-  @apply text-white opacity-0 transition-opacity duration-[0.3s] ease-[ease-in-out] mt-10 mb-[400px] p-5 rounded-[5px];
+  @apply text-[#c9cfdc] opacity-0 transition-opacity duration-[0.3s] ease-[ease-in-out] mt-10 mb-[400px] p-5 rounded-[5px];
   background: rgba(28, 35, 49, 0.88);
 }
 .section.active {
@@ -81,7 +82,7 @@ footer {
   @apply fixed w-full h-[calc(100%_-_50px)] z-[-1] bg-[url('https://i.imgur.com/izUkR2P.png')] left-0 top-[50px];
 }
 .content {
-  @apply text-sm p-[5px];
+  @apply p-[5px];
 }
 .content a {
   @apply text-[inherit];
